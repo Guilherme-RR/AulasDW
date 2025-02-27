@@ -19,4 +19,11 @@ git add .
 -> Salva uma versão dos arquivos 
 git commit -m "Porque estou salvando???"
 
--> Git push envia informação do computador para o github
+-> Git push 
+envia informação do computador para o github
+
+-> git pull
+Baixa a atualização dos arquivos do GitHub para a pasta ja existente
+
+-> git clone + caminho do repositorio no github
+clona um arquivo/uma pasta do github para o computador
