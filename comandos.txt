@@ -1,3 +1,12 @@
+-> Configura o pc com o nome e E-mail do responsavel pelo codigo
+git config --global user.name "Guilherme Rafael Rosa"
+git config --global user.email guilherme.rosa13@fatec.sp.gov.br
+
+->navegando no cmd
+cd nome-da-pasta    // entra em uma pasta
+cd ..               // volta uma pasta
+cd /                // vai para o c:
+
 -> Inicializa um repositório git (Utilizado apenas 1 vez)
 git init
 
