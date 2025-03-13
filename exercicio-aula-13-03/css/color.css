@@ -1,0 +1,17 @@
+:root{
+    --bg-color: #fff;
+    --text-color: #000000;
+    --logo: #ffee00;
+    --navbar-color: #fffcd4;
+    --card-color: #cfcfcf;
+    --footer-color: #fff;
+}
+
+body.change-mode{
+    --bg-color: #000;
+    --text-color: #ffd104;
+    --text-title-color: #ffee00;
+    --navbar-color: #888738;
+    --card-color: #96955d;
+    --footer-color: #000;
+}
