@@ -35,9 +35,10 @@ body{
 }
 
 .cards{
+    margin: 3rem;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem;
 }
 
@@ -45,12 +46,20 @@ body{
     background-color: var(--card-color);
     padding: 1rem;
     border-radius: 8px;
-    width: 300px;
+    width: 21rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+.card ul {
+    padding: 1rem;
+    color: var(--text-color);
+}
 .h3-card{
     padding-bottom: 1rem;
+    color: var(--text-color);
+    text-align: center;
+}
+.div-img{
+    text-align: center;
 }
 
 .img-card{
@@ -61,10 +70,22 @@ body{
     box-shadow: 10px;
 }
 
-.change-mode{
+.button-change-mode{
     cursor: pointer;
     padding: 5px 10px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg-color-darkmode);
+    color: var(--text-color-darkmode);
     border-radius: 10px;
+}
+footer{
+    background-color: var(--footer-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.text-card{
+    font-weight: 500;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>Bola de Ouro</title>
+        <title>Site Viagens</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/color.css">
@@ -11,33 +11,54 @@
     <body>
         <script src="script.js"></script>
         <nav class="navbar">
-            <div class="logo">Bola de Ouro</div>
+            <div class="logo">Viagem</div>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Indicados</a></li>
+                <li><a href="#">Destinos</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-            <div onclick="ChangeMode()" class="change-mode">Change Mode</div>
+            <div onclick="ChangeMode()" class="button-change-mode">Change Mode</div>
         </nav>
+        
         <section class="cards">
             <div class="card">
-                <h3 class="h3-card">Raphinha</h3>
-                <img src="img/raphinha.jpg" class="img-card">
-                <p>Brasileiro</p>
+                <h3 class="h3-card">Rio de Janeiro - RJ</h3>
+                <div class="div-img"><img src="img/rio.jpeg" class="img-card"></div>
+                
+                <ul class="text-card">
+                    <li><strong>O que fazer:</strong> Visite o Cristo Redentor, um dos maiores cartões-postais do Brasil. Aproveite as praias como Copacabana, Ipanema e Leblon. Não deixe de conhecer o Pão de Açúcar e a Lapa, um bairro famoso pela vida noturna.</li><br>
+                    <li><strong>Dica:</strong> Se você gosta de cultura, o Museu do Amanhã e o Museu de Arte do Rio são ótimas opções.</li>
+                </ul>
             </div>
 
             <div class="card">
-                <h3 class="h3-card">Salah</h3>
-                <img src="img/salah.jfif" class="img-card">
-                <p>Egípcio</p>
+                <h3 class="h3-card">Florianópolis - SC</h3>
+                <div class="div-img"><img src="img/floripa.jpg" class="img-card"></div>
+                
+                <ul class="text-card">
+                    <li><strong>O que fazer:</strong> Florianópolis é conhecida pelas suas belas praias, como Joaquina, Barra da Lagoa e Campeche. Também é famosa pelo seu clima descontraído e pelas opções de ecoturismo.</li><br>
+                    <li><strong>Dica:</strong> Se você ama natureza, visite a Ilha do Campeche ou o Parque Estadual de Jericoacoara.</li>
+                </ul>
             </div>
 
             <div class="card">
-                <h3 class="h3-card">Mbappe</h3>
-                <img src="img/mbappe.webp" class="img-card">
-                <p>Frânces</p>
+                <h3 class="h3-card">Salvador - BA</h3>
+                <div class="div-img"><img src="img/salvador.jpg" class="img-card"></div>
+                
+                <ul class="text-card">
+                    <li><strong>O que fazer:</strong> O que fazer: Conheça o Pelourinho, com sua arquitetura colonial, igrejas e museus. O Elevador Lacerda oferece uma vista maravilhosa da cidade e da Baía de Todos os Santos. Aproveite também para curtir a culinária baiana, com pratos como acarajé e moqueca.</li><br>
+                    <li><strong>Dica:</strong> Visite o Mercado Modelo para comprar artesanato local.</li>
+                </ul>
             </div>
         </section>
+        <footer>
+            <p>Feito por Guilherme Rafael Rosa - 2025 - Fatec</p>
+        </footer>
+        <script>
+            function ChangeMode() {
+                document.body.classList.toggle('change-mode')
+            }
+        </script>   
     </body>
 </html>

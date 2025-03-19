@@ -1,17 +1,22 @@
 :root{
-    --bg-color: #fff;
-    --text-color: #000000;
-    --logo: #ffee00;
-    --navbar-color: #fffcd4;
-    --card-color: #cfcfcf;
-    --footer-color: #fff;
+    --bg-color: #fcf2e2;
+    --text-color: #cec591;
+    --bg-color-darkmode: #000;
+    --text-color-darkmode: #fff;
+    --logo: #f7df59;
+    --navbar-color: #283674;
+    --card-color: #283674;
+    --footer-color: #283674;
 }
 
 body.change-mode{
-    --bg-color: #000;
-    --text-color: #ffd104;
+    --bg-color: #424242;
+    --text-color: #cec591;
+    --bg-color-darkmode: #fff;
+    --text-color-darkmode: #000;
     --text-title-color: #ffee00;
-    --navbar-color: #888738;
-    --card-color: #96955d;
-    --footer-color: #000;
+    --logo: #f7df59;
+    --navbar-color: #161616;
+    --card-color: #161616;
+    --footer-color: #161616;
 }
