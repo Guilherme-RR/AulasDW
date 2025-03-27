@@ -1,19 +1,27 @@
-const form = document.getElementById('formCalc');
-var inputNum1 = document.getElementById('inputNum1');
-var inputNum2 = document.getElementById('inputNum2');
+var resultadoVisor = document.getElementById('resultado');
 
+function insert(num)
+{
+    var numero = resultadoVisor.innerHTML;
+    resultadoVisor.innerHTML = numero + num;
+}
 
-form.addEventListener('submit', function(evento){
-    evento.preventDefault();
+function clean()
+{
+    resultadoVisor.innerHTML = "";
+}
 
-    var Num1 = inputNum1.value.trim();
-    var Num2 = inputNum2.value.trim();
+function apagar()
+{
+    var resultadoNovo = resultadoVisor.innerHTML;
+    resultadoVisor.innerHTML = resultadoNovo.substring(0, resultadoNovo.length -1);
+}
 
-    if(Num1 && Num2 != ''){
-        var Result = Num1 + Num2;
-        inputResult = document.createElement('input');
-        inputResult.textContent = Result;
-        inputNum1.value = '';
-        inputNum2.value = '';
+function calcular()
+{
+    var resultadoCalc = resultadoVisor.innerHTML;
+    if (resultadoCalc)
+    {
+        resultadoVisor.innerHTML = eval(resultadoCalc)
     }
-});
+}

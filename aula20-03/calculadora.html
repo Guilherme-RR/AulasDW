@@ -3,17 +3,46 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleCalc.css">
 
     </head>
     <body>
-        <h1>calculadora</h1>
-        <form action="#" id="formCalc">
-            <input type="number" id="inputNum1" placeholder="Digite um número..." required>
-            <input type="number" id="inputNum2" placeholder="Digite um número..." required>
-            <button type="submit">Somar</button>
-        </form>
-
+        <div class="bg">
+            <div class="calculadora">
+                <h1>calculadora</h1>
+                <p id="resultado"></p>
+                <table>
+                    <tr class="calc-tr">
+                        <td><button class="calc-button" onclick="clean()">C</button></td>
+                        <td><button class="calc-button" onclick="apagar()">⌫</button></td>
+                        <td><button class="calc-button" onclick="insert('/')">/</button></td>
+                        <td><button class="calc-button" onclick="insert('*')">X</button></td>
+                    </tr>
+                    <tr class="calc-tr">
+                        <td><button class="calc-button" onclick="insert('7')">7</button></td>
+                        <td><button class="calc-button" onclick="insert('8')">8</button></td>
+                        <td><button class="calc-button" onclick="insert('9')">9</button></td>
+                        <td><button class="calc-button" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr class="calc-tr">
+                        <td><button class="calc-button" onclick="insert('4')">4</button></td>
+                        <td><button class="calc-button" onclick="insert('5')">5</button></td>
+                        <td><button class="calc-button" onclick="insert('6')">6</button></td>
+                        <td><button class="calc-button" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr class="calc-tr">
+                        <td><button class="calc-button" onclick="insert('1')">1</button></td>
+                        <td><button class="calc-button" onclick="insert('2')">2</button></td>
+                        <td><button class="calc-button" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button class="calc-button btn-igual" onclick="calcular()">=</button></td>
+                    </tr>
+                    <tr class="calc-tr">
+                        <td colspan="2"><button class="calc-button btn-zero" onclick="insert('0')">0</button></td>
+                        <td><button class="calc-button" onclick="insert('.')">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         
 
         <script src="js/scriptCalc.js"></script>
